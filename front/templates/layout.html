@@ -1,13 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <link rel="stylesheet" href="styles/index.css">
-        <link rel="icon" type="image/png" href="/favicon.png">
-        <link rel="script" href="scripts/index.js">
+        <base href="/">
+        <meta charset="utf-8">
 
-        <meta name="author" content="Isaiah Palmer">
-        <meta name="charset" content="utf-8">
-        <meta name="keywords" content="books,ideas,literature">
+        <link rel="icon" type="image/png" href="/favicon.png">
+        <link rel="stylesheet" href="styles/main.css">
+        <script src="scripts/main.js"></script>
+
+        <meta charset="utf-8">
+        <meta name="author" content="{{ author }}">
+        <meta name="keywords" content="{{ keywords }}">
+        <meta name="description" content="{{ description }}">
+
+        <!-- Make it look good in browsers that adapt -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#000020">
+
+        <!-- For social media links. We can add photos and a url later -->
+        <meta property="og:title" content="{{ title }}">
+        <meta property="og:description" content="{{ description }}">
+
         <!-- TODO:
             Add proper meta elements
             Learn more about what the head should contain
