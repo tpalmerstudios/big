@@ -8,9 +8,8 @@
 
         <link rel="icon" type="image/png" href="/favicon.png">
         <link rel="stylesheet" href="styles/main.css">
-        <script src="scripts/main.js"></script>
+        <script src="scripts/main.js" defer></script>
 
-        <meta charset="utf-8">
         <meta name="author" content="Timothy Palmer">
         <meta name="keywords" content="book, author, writer, ideas, writers-block, creative">
         <meta name="description" content="The BIG is designed to help create ideas for authors and others, by chance and by choice.">
@@ -34,22 +33,26 @@
 
         <title>BIG: The Book Idea Generator</title>
     </head>
-    <body>
+    <body class="page">
         <!-- back/templates/header.html -->
-	<div class="header">
+	<header class="header">
 		<a href="/index.html" class="header" id="site_logo_link">
 			<hgroup class="header">
 				<h1 class="header" id="site_name_h1">BIG</h1>
 				<p class="header tagline" id="tagline_p">The Book Idea Generator</p>
 			</hgroup>
 		</a>
-	</div>
-        <nav>
-            
-        </nav>
-        <div class="main" id="nav_content_hold">
-            <main>
-				
+	</header>
+		<div class="content">
+	        <nav class="sidebar">
+	            <!-- back/templates/partials/nav.html -->
+<nav class ="sidebar">
+	<a href="/index.html">Home</a>
+</nav>
+	        </nav>
+		    <div class="main" id="nav_content_hold">
+			    <main class="article">
+					
 <div>
     <article>
         <h1>Book Idea Generator</h1>
@@ -256,8 +259,9 @@ type="date"
   </div>
 </fieldset>
 
-            </main>
-        </div>
+				</main>
+			</div>
+		</div>
         
     </body>
 </html>
