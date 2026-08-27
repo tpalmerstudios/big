@@ -1,3 +1,4 @@
+import json
 from pathlib import Path
 from jinja2 import Environment, FileSystemLoader
 
@@ -22,6 +23,11 @@ def build_pages ():
             "description": "The BIG is designed to help create ideas for authors and others, by chance and by choice.",
             "title": "The Book Idea Generator"
 }
+
+        json_path = page_path.with_suffix(".json")
+        if json_path.exists():
+                custom_data = json.loads(json_path.read_text())
+                data.update(custom_data)
 
         rendered_html = template.render(data)
 
