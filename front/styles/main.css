@@ -1,6 +1,20 @@
+html {
+	margin: 0;
+	min-height: 100%;
+}
 body {
-    background-color: #000020;
+	margin: 0;
+	min-height: 100vh;
+    background-color: #17284E;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	display: grid;
+	grid-template-columns: 20% 1fr;
+	grid-template-rows: auto 1fr auto;
+
+	grid-template-areas:
+	"header header"
+	"sidebar main"
+	"footer footer";
 }
 
 header {
