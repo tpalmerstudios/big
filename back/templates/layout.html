@@ -1,7 +1,8 @@
+<!-- back/templates/layout.html -->
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <base href="/">
+		<!--<base href="/">-->
         <meta charset="utf-8">
 
         <link rel="icon" type="image/png" href="/favicon.png">
@@ -33,15 +34,15 @@
         <title>BIG: {{ title }}</title>
     </head>
     <body>
-        {{ header }}
+        {% include 'partials/header.html' %}
         <nav>
-            {{ nav }}
+            {% include 'partials/nav.html' %}
         </nav>
         <div class="main" id="nav_content_hold">
             <main>
-                {{ content }}
+				{% block content %}{% endblock %}
             </main>
         </div>
-        {{ footer }}
+        {% include 'partials/footer.html' %}
     </body>
 </html>
