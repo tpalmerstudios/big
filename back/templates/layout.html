@@ -37,9 +37,7 @@
 <body class="page">
     {% include 'partials/header.html' %}
     <div class="content">
-        <nav class="sidebar">
-            {% include 'partials/nav.html' %}
-        </nav>
+        {% include 'partials/nav.html' %}
         <main class="main" id="nav_content_hold">
             {% block content %}{% endblock %}
         </main>
