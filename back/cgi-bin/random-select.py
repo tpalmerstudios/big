@@ -40,13 +40,13 @@ def main():
         respond(
             {"error": f"Unable to open generator data: {error}"},
             "500 Internal Server Error"
-        )
+            )
 
     except json.JSONDecodeError as error:
         respond(
             {"error": f"Invalid JSON: {error}"},
             "500 Internal Server Error"
-        )
+            )
         return
 
     items = data.get(category)
@@ -55,21 +55,20 @@ def main():
         respond(
             {"error": f"Unknown category: {category}"},
             "404 Not Found"
-        )
+            )
         return
 
     if not items:
         respond(
             {"error": f"Category '{category}' is empty"},
             "404 Not Found"
-        )
+            )
         return
 
     respond({
         "category": category,
         "value": random.choice(items)
-    })
-
+        })
 
 if __name__ == "__main__":
     main()
