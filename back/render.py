@@ -34,7 +34,7 @@ def build_pages ():
 
         output_file = FRONT_DIR / page_path.name
         output_file.write_text(rendered_html)
-        print(f"Compiled: source/{page_path.name} -> front/{output_file.name}")
+        print(f"Compiled: src/{page_path.name} -> front/{output_file.name}")
 
 if __name__ == "__main__":
     build_pages()
