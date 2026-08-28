@@ -2,27 +2,28 @@
 <!-- back/templates/layout.html -->
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-		<!--<base href="/">-->
-        <meta charset="utf-8">
 
-        <link rel="icon" type="image/png" href="/favicon.png">
-        <link rel="stylesheet" href="styles/main.css">
-        <script src="scripts/main.js" defer></script>
+<head>
+    <!--<base href="/">-->
+    <meta charset="utf-8">
 
-        <meta name="author" content="Timothy Palmer">
-        <meta name="keywords" content="book, author, writer, ideas, writers-block, creative">
-        <meta name="description" content="The BIG is designed to help create ideas for authors and others, by chance and by choice.">
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/main.js" defer></script>
 
-        <!-- Make it look good in browsers that adapt -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="theme-color" content="#000020">
+    <meta name="author" content="Timothy Palmer">
+    <meta name="keywords" content="book, author, writer, ideas, writers-block, creative">
+    <meta name="description" content="The BIG is designed to help create ideas for authors and others, by chance and by choice.">
 
-        <!-- For social media links. We can add photos and a url later -->
-        <meta property="og:title" content="The Book Idea Generator">
-        <meta property="og:description" content="The BIG is designed to help create ideas for authors and others, by chance and by choice.">
+    <!-- Make it look good in browsers that adapt -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000020">
 
-        <!-- TODO:
+    <!-- For social media links. We can add photos and a url later -->
+    <meta property="og:title" content="The Book Idea Generator">
+    <meta property="og:description" content="The BIG is designed to help create ideas for authors and others, by chance and by choice.">
+
+    <!-- TODO:
             Add proper meta elements
             Learn more about what the head should contain
 
@@ -31,10 +32,11 @@
             Create a 32x32 pixel photo for the website icon
             -->
 
-        <title>BIG: The Book Idea Generator</title>
-    </head>
-    <body class="page">
-        <!-- back/templates/header.html -->
+    <title>BIG: The Book Idea Generator</title>
+</head>
+
+<body class="page">
+    <!-- back/templates/header.html -->
 	<header class="header">
 		<a href="/index.html" class="header" id="site_logo_link">
 			<hgroup class="header">
@@ -43,16 +45,21 @@
 			</hgroup>
 		</a>
 	</header>
-		<div class="content">
-	        <nav class="sidebar">
-	            <!-- back/templates/partials/nav.html -->
-<nav class ="sidebar">
-	<a href="/index.html">Home</a>
+    <div class="content">
+        <nav class="sidebar">
+            <!-- back/templates/partials/nav.html -->
+<nav class="sidebar">
+	<a class="nav" id="home_nav_link" href="/index.html">Home</a>
+	<a class="nav" id="customize_nav_link" href="/index.html">Customize</a>
+	<a class="nav" id="randomize_nav_link" href="/index.html">Randomize</a>
+	<a class="nav" id="idea_nav_link" href="/index.html">Get Ideas</a>
+	<a class="nav" id="about_nav_link" href="/index.html">About</a>
+	<a class="nav" id="products_nav_link" href="/index.html">Services</a>
+	<a class="nav" id="contact_nav_link" href="/index.html">Contact Us</a>
 </nav>
-	        </nav>
-		    <div class="main" id="nav_content_hold">
-			    <main class="article">
-					
+        </nav>
+        <main class="main" id="nav_content_hold">
+            
 <div>
     <article>
         <h1>Book Idea Generator</h1>
@@ -259,9 +266,9 @@ type="date"
   </div>
 </fieldset>
 
-				</main>
-			</div>
-		</div>
-        
-    </body>
+        </main>
+    </div>
+    
+</body>
+
 </html>
