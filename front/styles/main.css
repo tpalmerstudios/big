@@ -95,14 +95,10 @@ a.active {
   border-radius: 12px;
   overflow: hidden;
   color: #c3e4f3;
-}
-
-/*main {
   display: grid;
   grid-template-rows: auto 1fr;
   gap: 1rem;
-  padding: 1rem;
-}*/
+}
 
 .footer {
   background-color: #9100d4;

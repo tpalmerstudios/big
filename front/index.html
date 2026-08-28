@@ -9,7 +9,12 @@
 
     <link rel="icon" type="image/png" href="/favicon.png">
     <link rel="stylesheet" href="styles/main.css">
-    <script src="scripts/main.js" defer></script>
+    <!--<script src="scripts/main.js" defer></script>-->
+    
+    
+    <link rel="stylesheet" href="styles/index.css">
+    
+    
 
     <meta name="author" content="PalmerStudios">
     <meta name="keywords" content="book, author, writer, ideas, writers-block, creative">
@@ -64,17 +69,39 @@
 </nav>
         <main class="main" id="nav_content_hold">
             
-<div>
-  <article>
-    <h1>Book Idea Generator</h1>
-    <p>This program is designed to make it where book ideas are created, by chance and choice.
-      This program will not write a book for you, but will give you a basis, so even <i>you</i> can become an
-      author.
-      Your mind will be heavy with ideas once you are done looking through this program,
-      so read on and maybe you will become the author of a famous book.</p>
-  </article>
+<article class="intro">
+  <h1>Book Idea Generator</h1>
+  <p>This program is designed to make it where book ideas are created, by chance and choice.
+    This program will not write a book for you, but will give you a basis, so even <i>you</i> can become an
+    author.
+    Your mind will be heavy with ideas once you are done looking through this program,
+    so read on and maybe you will become the author of a famous book.</p>
+</article>
 
-</div>
+<section class="generator-choice">
+  <div class="customize-panel">
+    <h2 class="customize-panel">Customize</h2>
+    <form>
+      <label for="genre">Genre:</label>
+
+      <select id="genre" name="genre">
+        <option value="">-- Choose one --</option>
+        <option value="action">Action</option>
+        <option value="thriller">Thriller</option>
+        <option value="sci-fi">Science Fiction</option>
+      </select>
+      <button type="submit">Let's Go!</button>
+    </form>
+  </div>
+  <div class="choice-divider">
+    <div class="divider-line"></div>
+    <span>OR</span>
+    <div class="divider-line"></div>
+  </div>
+  <div class="randomize-panel">
+    <h2 class="randomize-panel">Randomize</h2>
+  </div>
+</section>
 
         </main>
     </div>
@@ -85,10 +112,13 @@
 		<a class="footer-links" href="https://www.gnu.org/licenses/gpl-3.0.html">GNU GPLv3 License</a>
 		<a class="footer-links" href="contact.html">Contact</a>
 	</nav>
-	<p>&copy; 2026 <a class="footer-text-link" href="https://github.com/tpalmerstudios/big">BIG. PalmerStudios - A
+	<p>BIG &copy; 2026 <a class="footer-text-link" href="https://github.com/tpalmerstudios/big">PalmerStudios - A
 			Family Collaboration.</a>
 		Support the <a class="footer-text-link" href="https://fsf.org">FSF</a></p>
 </footer>
+
+    
+</body>
 </body>
 
 </html>
