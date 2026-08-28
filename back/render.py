@@ -29,6 +29,7 @@ def build_pages ():
                 custom_data = json.loads(json_path.read_text())
                 data.update(custom_data)
 
+        data["current_page"] = page_path.name
         rendered_html = template.render(data)
 
         output_file = FRONT_DIR / page_path.name

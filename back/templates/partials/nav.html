@@ -1,10 +1,16 @@
 <!-- back/templates/partials/nav.html -->
 <nav class="sidebar">
-	<a class="nav" id="home_nav_link" href="/index.html">Home</a>
-	<a class="nav" id="customize_nav_link" href="/index.html">Customize</a>
-	<a class="nav" id="randomize_nav_link" href="/index.html">Randomize</a>
-	<a class="nav" id="idea_nav_link" href="/index.html">Get Ideas</a>
-	<a class="nav" id="about_nav_link" href="/index.html">About</a>
-	<a class="nav" id="products_nav_link" href="/index.html">Services</a>
-	<a class="nav" id="contact_nav_link" href="/index.html">Contact Us</a>
+	<a class="{% if current_page == 'index.html' %}active{% endif %} nav" id="home_nav_link" href="index.html">Home</a>
+	<a class="{% if current_page == 'customize.html' %}active{% endif %} nav" id="customize_nav_link"
+		href="customize.html">Customize</a>
+	<a class="{% if current_page == 'randomize.html' %}active{% endif %} nav" id="randomize_nav_link"
+		href="randomize.html">Randomize</a>
+	<a class="{% if current_page == 'ideas.html' %}active{% endif %} nav" id="idea_nav_link" href="ideas.html">Get
+		Ideas</a>
+	<a class="{% if current_page == 'about.html' %}active{% endif %} nav" id="about_nav_link"
+		href="about.html">About</a>
+	<a class="{% if current_page == 'products.html' %}active{% endif %} nav" id="products_nav_link"
+		href="products.html">Services</a>
+	<a class="{% if current_page == 'contact.html' %}active{% endif %} nav" id="contact_nav_link"
+		href="contact.html">Contact Us</a>
 </nav>
