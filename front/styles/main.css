@@ -27,32 +27,54 @@ p.header {
 
 div.content {
   display: grid;
-  grid-template-columns: 20% 1fr;
+  grid-template-columns: minmax(220px, 20%) 1fr;
+  gap: 10px;
+  padding: 10px;
 }
 
 .sidebar {
-  background-color: #0a1f16;
-  margin: 10px;
+  background-color: #00d491;
   padding: 0;
+  border-radius: 8px;
 }
 
 a.nav {
   display: block;
-  width: 100%;
-  box-sizing: border-box;
-  font-size: xx-large;
-  color: #d1defa;
+  font-size: x-large;
+  color: #0a1f16;
   font-weight: bold;
   text-decoration: none;
-  margin: 0;
-  padding: 0;
+  padding: 0.3em 1em 0.3em 1em;
+  border-bottom: 3px solid #0a1f16;
 }
 
-#home_nav_link:hover {
-  background-color: #ffffff;
-  width: 100%;
-  padding: 0;
-  margin: 0;
+#home_nav_link:hover,
+#home_nav_link:active {
+  background-color: #d40043;
+}
+#customize_nav_link:hover,
+#customize_nav_link:active {
+  background-color: #56b7ff;
+}
+#randomize_nav_link:hover,
+#randomize_nav_link:active {
+  background-color: #9100d4;
+}
+#idea_nav_link:hover,
+#idea_nav_link:active {
+  background-color: #b3496a;
+}
+#about_nav_link:hover,
+#about_nav_link:active {
+  background-color: #d49100;
+}
+#products_nav_link:hover,
+#products_nav_link:active {
+  background-color: #ff56b7;
+}
+#contact_nav_link:hover,
+#contact_nav_link:active {
+  background-color: #0043d4;
 }
 
 main {
