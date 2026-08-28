@@ -1,0 +1,30 @@
+{
+	"genres": [
+		"Action",
+		"Adventure",
+		"Apocalyptic",
+		"Comedy",
+		"Crime",
+		"Fantasy",
+		"Historical",
+		"Horror",
+		"Literary",
+		"Mystery",
+		"Political",
+		"Post Apocalyptic",
+		"Romance",
+		"Science Fiction",
+		"Spy",
+		"Thriller",
+		"War",
+		"Western"
+	],
+	"genders": [
+		"male",
+		"female"
+	],
+	"time-range": [
+		"B.C.",
+		"A.D."
+	]
+}
