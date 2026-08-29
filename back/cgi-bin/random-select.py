@@ -8,7 +8,7 @@ from pathlib import Path
 from urllib.parse import parse_qs
 
 
-DATA_FILE = Path(__file__).resolve().parent.parent / "book-data" / "book-concepts.json"
+DATA_FILE = (Path(__file__).resolve().parent.parent / "book-data" / "book-concepts.json")
 
 
 def respond(data, status="200 OK"):
@@ -41,6 +41,7 @@ def main():
             {"error": f"Unable to open generator data: {error}"},
             "500 Internal Server Error"
             )
+        return
 
     except json.JSONDecodeError as error:
         respond(
@@ -49,26 +50,61 @@ def main():
             )
         return
 
-    items = data.get(category)
+    variables = data.get("vaiables")
 
-    if not isinstance(items, list):
+    if not isinstance(variables, list):
+        respond(
+            {"error": "Generator data does not contain a valid variables list"},
+            "500 Internal Server Error"
+            )
+        return
+    
+    selected_variable = None
+    for variable in variables:
+        if variable.get("name") == category:
+            selected_variable = variable
+            break
+
+    if selected_variable is None:
         respond(
             {"error": f"Unknown category: {category}"},
             "404 Not Found"
-            )
+        )
         return
 
-    if not items:
+    options = selected_variable.get("options")
+
+    if not isinstance(options, list) or not options:
         respond(
-            {"error": f"Category '{category}' is empty"},
+            {"error": f"Category '{category}' has no options"},
             "404 Not Found"
-            )
+        )
+        return
+
+    choice = random.choice(options)
+
+    if not isinstance(choice, dict):
+        respond(
+            {"error": f"Invalid option format for category '{category}'"},
+            "500 Internal Server Error"
+        )
+        return
+
+    value = choice.get("value")
+    label = choice.get("label")
+
+    if value is None or label is None:
+        respond(
+            {"error": f"Option in category '{category}' is missing value or label"},
+            "500 Internal Server Error"
+        )
         return
 
     respond({
         "category": category,
-        "value": random.choice(items)
-        })
+        "value": value,
+        "label": label
+    })
 
 if __name__ == "__main__":
     main()

@@ -1,30 +1,113 @@
 {
-	"genres": [
-		"Action",
-		"Adventure",
-		"Apocalyptic",
-		"Comedy",
-		"Crime",
-		"Fantasy",
-		"Historical",
-		"Horror",
-		"Literary",
-		"Mystery",
-		"Political",
-		"Post Apocalyptic",
-		"Romance",
-		"Science Fiction",
-		"Spy",
-		"Thriller",
-		"War",
-		"Western"
-	],
-	"genders": [
-		"male",
-		"female"
-	],
-	"time-range": [
-		"B.C.",
-		"A.D."
+	"variables": [
+		{
+			"name": "genre",
+			"label": "Genre",
+			"type": "select",
+			"options": [
+				{
+					"label": "Action",
+					"value": "action"
+				},
+				{
+					"label": "Adventure",
+					"value": "adventure"
+				},
+				{
+					"label": "Apocalyptic",
+					"value": "apocalyptic"
+				},
+				{
+					"label": "Comedy",
+					"value": "comedy"
+				},
+				{
+					"label": "Crime",
+					"value": "crime"
+				},
+				{
+					"label": "Fantasy",
+					"value": "fantasy"
+				},
+				{
+					"label": "Historical",
+					"value": "historical"
+				},
+				{
+					"label": "Horror",
+					"value": "horror"
+				},
+				{
+					"label": "Literary",
+					"value": "literary"
+				},
+				{
+					"label": "Mystery",
+					"value": "mystery"
+				},
+				{
+					"label": "Political",
+					"value": "political"
+				},
+				{
+					"label": "Post Apocalyptic",
+					"value": "post-apocalyptic"
+				},
+				{
+					"label": "Romance",
+					"value": "romance"
+				},
+				{
+					"label": "Sci-Fi",
+					"value": "sci-fi"
+				},
+				{
+					"label": "Spy",
+					"value": "spy"
+				},
+				{
+					"label": "Thriller",
+					"value": "thriller"
+				},
+				{
+					"label": "War",
+					"value": "war"
+				},
+				{
+					"label": "Western",
+					"value": "western"
+				}
+			]
+		},
+		{
+			"name": "antagonist-gender",
+			"label": "Main Character Gender",
+			"type": "select",
+			"options": [
+				{
+					"label": "Male",
+					"value": "male"
+				},
+				{
+					"label": "Female",
+					"value": "female"
+				}
+			]
+		},
+		{
+			"name": "time-range",
+			"label": "Time Range",
+			"type": "select",
+			"options": [
+				{
+					"label": "B.C.",
+					"value": "bc"
+				},
+				{
+					"label": "A.D.",
+					"value": "ad"
+				}
+			]
+		}
 	]
 }
