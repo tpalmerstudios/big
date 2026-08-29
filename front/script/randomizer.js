@@ -24,7 +24,7 @@ form.addEventListener("submit", async function(event) {
 
         currentChoice = data.value;
 
-        result.textContent = currentChoice;
+        result.textContent = data.label;
         nextButton.disabled = false;
     }
     catch (error) {
