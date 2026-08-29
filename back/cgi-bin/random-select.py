@@ -50,7 +50,7 @@ def main():
             )
         return
 
-    variables = data.get("vaiables")
+    variables = data.get("variables")
 
     if not isinstance(variables, list):
         respond(
