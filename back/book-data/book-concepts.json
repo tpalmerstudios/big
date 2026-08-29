@@ -108,6 +108,232 @@
 					"value": "ad"
 				}
 			]
+		},
+		{
+			"name": "target-age",
+			"label": "What age group is your target?",
+			"type": "select",
+			"options": [
+				{
+					"label": "Infants 0-3",
+					"value": "infants"
+				},
+				{
+					"label": "Junior 4-8",
+					"value": "junior"
+				},
+				{
+					"label": "Juvenille 9-13",
+					"value": "juvenille"
+				},
+				{
+					"label": "Young Adult 14-18",
+					"value": "ya"
+				},
+				{
+					"label": "Adult 19+",
+					"value": "adult"
+				}
+			]
+		},
+		{
+			"name": "economy",
+			"label": "Economy",
+			"type": "slider",
+			"default": 50,
+			"min": 0,
+			"max": 100
+		},
+		{
+			"name": "protagonist_age",
+			"label": "Protagonist Age",
+			"type": "slider",
+			"default": 50,
+			"min": 0,
+			"max": 500
+		},
+		{
+			"name": "iq",
+			"label": "IQ",
+			"type": "slider",
+			"default": 50,
+			"min": 0,
+			"max": 1000
+		},
+		{
+			"name": "comfort_zone",
+			"label": "Willingness to Go Outside Comfort Zone",
+			"type": "slider",
+			"default": 50,
+			"min": 0,
+			"max": 110
+		},
+		{
+			"name": "happiness",
+			"label": "Happiness Level",
+			"type": "slider",
+			"default": 50,
+			"min": 0,
+			"max": 100
+		},
+		{
+			"name": "anger",
+			"label": "Anger Level",
+			"type": "slider",
+			"default": 50,
+			"min": 0,
+			"max": 100
+		},
+		{
+			"name": "skill_level",
+			"label": "Skill Level",
+			"type": "slider",
+			"default": 50,
+			"min": 0,
+			"max": 1000
+		},
+		{
+			"name": "book_length",
+			"label": "Book Length (in Pages)",
+			"type": "slider",
+			"default": 250,
+			"min": 1,
+			"max": 1000
+		},
+		{
+			"name": "transportation",
+			"label": "Transportation",
+			"type": "select",
+			"options": [
+				{
+					"label": "Skateboard",
+					"value": "skateboard"
+				},
+				{
+					"label": "Scooter",
+					"value": "scooter"
+				},
+				{
+					"label": "Tricycle",
+					"value": "tricycle"
+				},
+				{
+					"label": "Bicycle",
+					"value": "bicycle"
+				},
+				{
+					"label": "Unicycle",
+					"value": "unicycle"
+				},
+				{
+					"label": "Horse",
+					"value": "horse"
+				},
+				{
+					"label": "Other animals or creatures",
+					"value": "other-animals-or-creatures"
+				},
+				{
+					"label": "Rowboat",
+					"value": "rowboat"
+				},
+				{
+					"label": "Sailboat",
+					"value": "sailboat"
+				},
+				{
+					"label": "Ship",
+					"value": "ship"
+				},
+				{
+					"label": "Motorboat",
+					"value": "motorboat"
+				},
+				{
+					"label": "Other water transportation",
+					"value": "other-water-transportation"
+				},
+				{
+					"label": "ATV",
+					"value": "atv"
+				},
+				{
+					"label": "Motorcycle or a variation of any type of motorcycle",
+					"value": "motorcycle"
+				},
+				{
+					"label": "Electric bike",
+					"value": "electric-bike"
+				},
+				{
+					"label": "Electric scooter",
+					"value": "electric-scooter"
+				},
+				{
+					"label": "Rollerblade or roller skates",
+					"value": "rollerblade-or-roller-skates"
+				},
+				{
+					"label": "Ice skates",
+					"value": "ice-skates"
+				},
+				{
+					"label": "Barrel",
+					"value": "barrel"
+				},
+				{
+					"label": "Parachute",
+					"value": "parachute"
+				},
+				{
+					"label": "Bungee cord",
+					"value": "bungee-cord"
+				},
+				{
+					"label": "Car",
+					"value": "car"
+				},
+				{
+					"label": "Slingshot",
+					"value": "slingshot"
+				},
+				{
+					"label": "Truck",
+					"value": "truck"
+				},
+				{
+					"label": "Semi-truck",
+					"value": "semi-truck"
+				},
+				{
+					"label": "Planes or jets",
+					"value": "planes-or-jets"
+				},
+				{
+					"label": "Helicopters",
+					"value": "helicopters"
+				},
+				{
+					"label": "Skis",
+					"value": "skis"
+				},
+				{
+					"label": "jet-skis",
+					"value": "Jet-Skis"
+				},
+				{
+					"label": "Elevator",
+					"value": "elevator"
+				},
+				{
+					"label": "Space vehicle",
+					"value": "space-vehicle"
+				},
+				{
+					"label": "Other",
+					"value": "other"
+				}
+			]
 		}
 	]
 }
