@@ -1,8 +1,12 @@
 {
-            "author": "PalmerStudios",
-            "keywords": "book, author, writer, ideas, writers-block, creative",
-            "description": "The BIG is designed to help create ideas for authors and others, by chance and by choice.",
-            "title": "The Book Idea Generator",
-            "custom_style": ["styles/index.css"],
-            "custom_script": ["script/function.js"]
+    "author": "PalmerStudios",
+    "keywords": "book, author, writer, ideas, writers-block, creative",
+    "description": "The BIG is designed to help create ideas for authors and others, by chance and by choice.",
+    "title": "Book Info Customization",
+    "custom_style": [
+        "styles/customize/book-info.css"
+    ],
+    "custom_script": [
+        "script/customize/book-info.js"
+    ]
 }

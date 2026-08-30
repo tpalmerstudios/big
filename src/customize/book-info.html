@@ -3,11 +3,12 @@
 
 {% block content %}
 <article>
-	<h1>Basic Book Info</h1>
-	<p>We should give a few ideas about some book types. Reference research and offer a few ideas on unique ways to write.</p>
+    <h1>Basic Book Info</h1>
+    <p>We should give a few ideas about some book types. Reference research and offer a few ideas on unique ways to
+        write.</p>
 </article>
-<form>
-	<label for="genre">Genre:</label>
+<form id="book-info" data-category="book-info" data-next="protagonist">
+    <label for="genre">Genre:</label>
     <select id="genre-select" name="genre">
         <option value="">--Choose One or Randomize--</option>
         <option value="action">Action</option>
@@ -28,24 +29,36 @@
         <option value="thriller">Thriller</option>
         <option value="war">War</option>
         <option value="western">Western</option>
- </select>
-<label for="target-age">What age group is your target?:</label>
+    </select>
+    <label for="target-age">What age group is your target?:</label>
     <select id="target-age-select" name="target-age">
         <option value="">--Choose One or Randomize--</option>
-        <option value="infants">Infants&emsp;&emsp;&emsp;&emsp;0-3</option>
-        <option value="junior">Junior&emsp;&emsp;&emsp;&emsp;4-8</option>
-        <option value="juvenille">Juvenille&emsp;&emsp;&emsp;9-13</option>
-        <option value="ya">Young Adult&emsp;14-18</option>
-        <option value="adult">Adult&emsp;&emsp;&emsp;&emsp;&emsp;19+</option>
- </select>
- <label for="book_length">Book Length (in Pages):</label>
-<input type="range" min="1" max="1000" value="250" class="slider" id="book_length">
+        <option value="infants">Infants 0-3</option>
+        <option value="junior">Junior 4-8</option>
+        <option value="juvenille">Juvenille 9-13</option>
+        <option value="ya">Young Adult 14-18</option>
+        <option value="adult">Adult 19+</option>
+    </select>
+    <label for="book_length">Book Length (in Pages):</label>
+    <input type="range" min="1" max="1000" value="250" class="slider" id="book_length">
+    <!-- Add an input for tone/vibe.
  Tone/Vibe
 	Happy
 	Sad
 	Serious
 	Funny
 	Detailed
+    etc.
+Don't add it directly. Add the variables to
+big/back/book-data/book-concepts.json
+
+Then you can run this command:
+python3 back/form-creator.py
+
+Then copy the relevant code here.
+
+Any other variables you want to add to "Book Info"
+should be added there and do the same process.-->
 </form>
 
 {% endblock %}

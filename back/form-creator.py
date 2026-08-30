@@ -3,7 +3,7 @@ import json
 def output_select(name, label, options):
     print(f'<label for="{name}">{label}:</label>')
     print(f'    <select id="{name}-select" name="{name}">')
-    print(f'        <option value="">--Choose One or Randomize--</option>')
+    print(f'        <option value="">--Choose One--</option>')
     
     for option in options:
         value = option["value"]
@@ -35,5 +35,5 @@ for variable in variables:
                       variable["label"],
                       variable["min"],
                       variable["max"],
-                      variable.get("default")
+                      variable.get("default", variable["min"])
                   )
